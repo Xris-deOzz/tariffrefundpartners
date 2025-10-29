@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff Refund Partners - Get Cash Back For Trump Tariffs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subheadline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+        }
+
+        .polymarket-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .polymarket-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #ff5722;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,53,0.3);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Simple Steps */
+        .simple-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .simple-step {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .simple-step h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        /* Comparison */
+        .simple-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .comparison-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .comparison-card.featured {
+            border: 3px solid #ff6b35;
+            position: relative;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #ff6b35;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .comparison-card h3 {
+            color: #1e3c72;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .comparison-card ul {
+            list-style: none;
+        }
+
+        .comparison-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .comparison-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-simple {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 30px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+        }
+
+        /* Alert Box */
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 60px 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.3rem;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Utility */
+        .text-center {
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .disclaimer {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subheadline {
+                font-size: 1.2rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .simple-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Tariff Refund Partners</div>
+            <nav>
+                <a href="#how">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMFgBC5_kPl4WiP8_yfKP2T6Hohpn7gpkyDquwo85XncAbBQ/viewform?usp=publish-editor" target="_blank">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Get Cash Back For Trump Tariff You Paid</h1>
+            <p class="subheadline">Get paid now. Zero risk.</p>
+            
+            <div class="hero-description">
+                <p>We buy claims to your potential claim refunds. If the courts rule that Trump Tariffs are illegal, the tariffs might be paid back. At the moment, the markets give only 10% chance that the Government will be forced to refund the tariffs. However, we are willing to take the risk.</p>
+            </div>
+
+            <a href="https://polymarket.com/event/will-the-court-force-trump-to-refund-tariffs" target="_blank" class="polymarket-link">
+                View Market Predictions on Polymarket →
+            </a>
+            
+            <div style="margin-top: 40px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMFgBC5_kPl4WiP8_yfKP2T6Hohpn7gpkyDquwo85XncAbBQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">Get Your Free Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Value Prop -->
+    <section id="how" class="container">
+        <h2 class="text-center">We Make It Simple</h2>
+        <p class="text-center" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px;">You paid tariffs. We'll handle all the admin and get you a portion of your tariff money back.</p>
+        
+        <div class="simple-steps">
+            <div class="simple-step">
+                <div class="step-icon">💰</div>
+                <h3>Get % Now</h3>
+                <p>Receive cash within a few days. No waiting for court decisions.</p>
+            </div>
+
+            <div class="simple-step">
+                <div class="step-icon">⚖️</div>
+                <h3>We Do All the Work</h3>
+                <p>We file protests, handle legal proceedings, coordinate with CBP.</p>
+            </div>
+
+            <div class="simple-step">
+                <div class="step-icon">📈</div>
+                <h3>Share the Win</h3>
+                <p>Get additional % more if we recover your refund (less admin fees).</p>
+            </div>
+
+            <div class="simple-step">
+                <div class="step-icon">🛡️</div>
+                <h3>Zero Risk</h3>
+                <p>If refunds don't happen, you keep your initial payment. We lose our investment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="container">
+        <h2 class="text-center">Compare Your Options</h2>
+        
+        <div class="simple-comparison">
+            <div class="comparison-card">
+                <h3>Do It Yourself</h3>
+                <ul>
+                    <li><strong>Upfront:</strong> $0</li>
+                    <li><strong>Legal Costs:</strong> $10,000-$100,000+</li>
+                    <li><strong>Your Time:</strong> Hundreds of hours</li>
+                    <li><strong>If You Win:</strong> 100% (minus legal fees)</li>
+                    <li><strong>If You Lose:</strong> Lost time & money</li>
+                    <li><strong>Risk:</strong> All yours</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card featured">
+                <div class="featured-badge">FEATURED</div>
+                <h3>Partner With Us</h3>
+                <ul>
+                    <li><strong>Upfront:</strong> X% immediately</li>
+                    <li><strong>Legal Costs:</strong> $0</li>
+                    <li><strong>Your Time:</strong> Zero</li>
+                    <li><strong>If You Win:</strong> ~X% total</li>
+                    <li><strong>If You Lose:</strong> Keep your upfront payment</li>
+                    <li><strong>Risk:</strong> We take it all</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now -->
+    <section class="container">
+        <div class="alert">
+            <h3 style="margin: 0 0 10px 0;">⏰ Time-Sensitive: Act Before You Lose Your Rights</h3>
+            <p>Businesses must file customs protests within <strong>180 days of liquidation</strong>. Missing this deadline permanently forfeits your refund rights. The Supreme Court hears arguments <strong>November 5, 2025</strong>. Don't wait.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container">
+        <h2 class="text-center">Common Questions</h2>
+        
+        <div class="faq-simple">
+            <div class="faq-item">
+                <div class="faq-question">Q: What exactly do I get?</div>
+                <div class="faq-answer">A: You will receive an upfront payment for the tariff payments you already made. Plus, you will receive additional payment (less admin fees) if we successfully recover your refund. You can expect up to 30% refund with zero risk or cost to you. You get to keep the initial payment irrespectively.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What if the Supreme Court upholds the tariffs?</div>
+                <div class="faq-answer">A: You keep your upfront payment. We lose our investment and all legal costs. This is our risk, not yours.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What are administrative fees?</div>
+                <div class="faq-answer">A: Actual costs like customs filing fees, protest fees, and government processing charges. Disclosed upfront in our agreement. Deducted only from success payment, not upfront payment.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Why do you keep the majority of the refund?</div>
+                <div class="faq-answer">A: We pay you upfront (our capital at risk), cover $25,000-$100,000+ in legal costs, spend years navigating complex customs law, and absorb 100% of the risk if refunds don't happen.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Do I need to have filed a protest already?</div>
+                <div class="faq-answer">A: No. We handle all filings and documentation.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How long to get my upfront payment?</div>
+                <div class="faq-answer">A: Usually within a few business days after signing our agreement.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Is this legal?</div>
+                <div class="faq-answer">A: Yes. This is a claims purchase agreement combined with litigation finance—both standard legal practices.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Get Your Free Assessment</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">We'll analyze your tariff payments and show you exactly what you could receive—no obligation.</p>
+            
+            <div class="contact-info">
+                <p><strong>📧 Email:</strong> info@tariffrefundpartners.com</p>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMFgBC5_kPl4WiP8_yfKP2T6Hohpn7gpkyDquwo85XncAbBQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary" style="background: white; color: #ff6b35;">Request Assessment</a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 1rem; opacity: 0.9;">✓ 48-hour response time  •  ✓ Completely confidential  •  ✓ No obligation</p>
+        </div>
+    </section>
+
+    <!-- Legal Context -->
+    <section class="container" style="background: white; padding: 40px; border-radius: 10px;">
+        <h2>The Legal Situation</h2>
+        
+        <div style="margin-top: 30px;">
+            <h3 style="color: #ff6b35;">⚖️ November 5, 2025</h3>
+            <p>Supreme Court hears oral arguments on whether Trump's tariffs are constitutional</p>
+        </div>
+
+        <p style="margin-top: 30px; font-weight: 600; text-align: center;">Over $210 billion in tariffs collected • Precedent supports refunds (U.S. Shoe Corp. case, 1998)</p>
+    </section>
+
+    <!-- Disclaimers -->
+    <section class="container">
+        <div class="disclaimer">
+            <h3 style="margin-bottom: 15px; color: #333;">Important Information</h3>
+            <p><strong>No Guarantees:</strong> Supreme Court outcome uncertain. Refunds not guaranteed. You keep upfront payment regardless.</p>
+            <p style="margin-top: 10px;"><strong>What We Keep:</strong> We retain the majority of recovered refunds to cover upfront payments, legal costs ($25,000-$100,000+), admin fees, and compensation for risk.</p>
+            <p style="margin-top: 10px;"><strong>Not Legal Advice:</strong> This site provides general information only. Consult your own advisors before proceeding.</p>
+            <p style="margin-top: 10px;"><strong>Not a Government Agency:</strong> We are a private company. Not affiliated with U.S. government or CBP.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="container text-center" style="margin: 60px auto;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to turn your tariffs into cash?</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMFgBC5_kPl4WiP8_yfKP2T6Hohpn7gpkyDquwo85XncAbBQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 20px 50px;">Get Your Free Assessment</a>
+        <p style="margin-top: 20px; color: #666;">No cost. No obligation. 48-hour response.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="font-size: 1.8rem; margin-bottom: 20px;">Tariff Refund Partners</div>
+            <p style="opacity: 0.8; max-width: 600px; margin: 0 auto;">Converting tariff payments into immediate liquidity for businesses</p>
+            <p style="margin-top: 30px; opacity: 0.7; font-size: 0.9rem;">
+                © 2025 Tariff Refund Partners • Not affiliated with U.S. government<br>
+                Last Updated: October 29, 2025
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links only
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Only prevent default for internal anchor links
+                if (href.startsWith('#') && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
